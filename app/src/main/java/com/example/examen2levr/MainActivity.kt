@@ -43,7 +43,12 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        // Navegar a ProfileActivity enviando el usuario
+        if (password != "abc123") {
+            Toast.makeText(this, "Contraseña incorrecta", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        // Contraseña correcta → ir a ProfileActivity
         val intent = Intent(this, ProfileActivity::class.java).apply {
             putExtra("EXTRA_USERNAME", username)
         }
