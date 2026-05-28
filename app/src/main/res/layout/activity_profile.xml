@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#FCF0F5"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <ImageView
+        android:id="@+id/ivFotoPerfil"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/user_circle"
+        android:contentDescription="Foto de perfil"
+        android:layout_marginBottom="24dp"
+        app:tint="#5BC8D4" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono: 5534829770"
+        android:textSize="16sp"/>
+
+</LinearLayout>
