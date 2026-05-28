@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        // Contraseña correcta → ir a ProfileActivity
+
         val intent = Intent(this, ProfileActivity::class.java).apply {
             putExtra("EXTRA_USERNAME", username)
         }
