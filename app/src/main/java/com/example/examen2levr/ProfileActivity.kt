@@ -30,8 +30,9 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun loadUserData() {
-        // Aquí puedes recibir datos del Intent si vienen del login
+
         val username = intent.getStringExtra("EXTRA_USERNAME") ?: "Usuario"
+        tvUsuario.text = username
         val phone = intent.getStringExtra("EXTRA_PHONE") ?: "Sin teléfono"
 
         tvUsuario.text = username
